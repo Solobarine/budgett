@@ -174,7 +174,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank all
+I would like to thank Gregoire Vella for his design. Check him out at this <a href="https://www.behance.net/gregoirevella">link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
