@@ -1,0 +1,12 @@
+<section id="create_deal">
+    <div id="transaction_nav">
+        <%= link_to group_path(params[:group_id]) do %>
+            <i class="fa-solid fa-arrow-left"></i>
+        <% end %>
+        <h3>TRANSACTIONS</h3>
+    </div>
+    <h2>New Transaction</h2>
+    <div>
+        <%= render 'form' %>
+    </div>
+</section>

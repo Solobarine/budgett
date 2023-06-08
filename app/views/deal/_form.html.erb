@@ -1,0 +1,15 @@
+<%= form_with model: @deal, url: group_deal_index_path do |f| %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.hidden_field :group_id %>
+    <div>
+        <%= f.label :name, "Enter Transaction Name" %>
+        <%= f.text_field :name %>
+    </div>
+    <div>
+        <%= f.label :amount, "Enter Amount" %>
+        <%= f.text_field :amount %>
+    </div>
+    <div>
+        <%= f.submit "Create Transaction" %>
+    </div>
+<% end %>

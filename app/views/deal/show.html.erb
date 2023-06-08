@@ -1,0 +1,24 @@
+<section id="show_deals">
+    <div>
+        <div id="transaction_nav">
+            <%= link_to group_index_path do %>
+                <i class="fa-solid fa-arrow-left"></i>
+            <% end %>
+            <h3>TRANSACTIONS</h3>
+        </div>
+        <div id="group_head">
+            <div id="image_group">
+                <%= image_tag "#{@group.icon}" %>
+                <h3> <%= @group.name %> </h3>
+            </div>
+            <span> <p>Total:&nbsp;</p> <h3> <%= @group.total_deals %> </h3></span>
+        </div>
+        <div>
+            <% @deals.each_with_index do |deal, i| %>
+                <h4> <%= deal.name%> </h4>
+                <p> <%= deal.amount%> </p>
+            <% end %>
+        </div>
+    </div>
+    <%= link_to 'Add Transaction', new_deal_path(@group.id) %>
+</section>
