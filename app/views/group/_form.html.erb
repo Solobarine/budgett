@@ -1,0 +1,14 @@
+<%= form_with model: @group, url: '/group' do |f| %>
+    <%= f.hidden_field :user_id %>
+    <div>
+        <%= f.label :name, "Enter Category Name" %>
+        <%= f.text_field :name, required: true,  autofocus: true, autocomplete: "name" %>
+    </div>
+    <div>
+        <%= f.label :icon, "Enter Category Icon" %>
+        <%= f.text_field :icon, required: true, autofocus: true, autocomplete: "icon" %>
+    </div>
+    <div>
+        <%= f.submit "Create Category" %>
+    </div>
+<% end %>

@@ -1,0 +1,11 @@
+<section id="create_group">
+    <div id="transaction_nav">
+        <%= link_to group_index_path do %>
+            <i class="fa-solid fa-arrow-left"></i>
+        <% end %>
+        <h3>CATEGORY</h3>
+    </div>
+    <h2>Add a Category</h2>
+    <%= render "form" %>
+    <%= button_to "Categories", group_index_path %>
+</section>

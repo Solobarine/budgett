@@ -1,0 +1,13 @@
+<section id="groups">
+    <div id="group_summary">
+        <i class="fa-solid fa-bars"></i>
+        <h4>CATEGORIES</h4>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="groups">
+        <% @groups.each do |g|%>
+            <%= render partial: 'group', :locals => {:group => g} %>
+        <% end %>
+    </div>
+    <%= link_to 'Add new Category', new_group_path, class: 'new' %>
+</section>
