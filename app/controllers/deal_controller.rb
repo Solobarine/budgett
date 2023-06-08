@@ -1,6 +1,6 @@
 class DealController < ApplicationController
   before_action :authenticate_user!
-  
+
   def new
     @group = current_user.groups
     @deal = Deal.new
