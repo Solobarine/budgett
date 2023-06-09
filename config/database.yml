@@ -85,4 +85,5 @@ production:
   <<: *default
   database: budgett_production
   username: budgett
+  url: <%= ENV['DATABASE_URL'] %>
   password: <%= ENV["BUDGETT_DATABASE_PASSWORD"] %>
