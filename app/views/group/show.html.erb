@@ -1,0 +1,23 @@
+<section id="show_group">
+    <div>
+        <div id="transaction_nav">
+            <%= link_to group_index_path do %>
+                <i class="fa-solid fa-arrow-left"></i>
+            <% end %>
+            <h3>TRANSACTIONS</h3>
+        </div>
+        <div id="group_head">
+            <div id="image_group">
+                <img src="<%= @group.icon %>" alt="">
+                <h3> <%= @group.name %> </h3>
+            </div>
+            <h3>$<%= @group.total_deals%> </h3>
+        </div>
+        <div id="transactions">
+            <% @deals.each do |d| %>
+                <%= render partial: 'deal/deal', :locals => {:deal => d} %>
+            <% end %>
+        </div>
+    </div>
+    <%= link_to 'Add Transaction', new_group_deal_path(@group.id), class: 'new' %>
+</section>

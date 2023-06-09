@@ -13,3 +13,284 @@
  *= require_tree .
  *= require_self
  */
+
+ /* stylelint-disable */
+
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+ @font-face{font-family:proxima nova;font-style:normal;font-weight:400;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Regular Italic.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:400;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Regular.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:250;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Thin Italic.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:250;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Thin.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:300;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Light.woff') format('woff')}@font-face{font-family:proxima nova;font-style:italic;font-weight:300;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Light Italic.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:600;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Semibold Italic.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:600;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Semibold.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:700;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Bold Italic.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:700;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Bold.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:800;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Extrabold Italic.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:800;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Extrabold.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:900;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Black Italic.woff') format('woff')}@font-face{font-family:proxima nova;font-style:normal;font-weight:900;src:local('Proxima Nova'),url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Black.woff') format('woff')}
+
+
+* {
+    font-family: proxima nova, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=submit] {
+    background-color: #5fb523;
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+}
+
+ #main {
+    max-width: 400px;
+    background-color: #aaa;
+    margin: auto;
+    min-height: 100vh;
+ }
+
+ /* Splash */
+ #splash_links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 10px 20px;
+ }
+
+ #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 85vh;
+    background-color: #aaa;
+ }
+
+ #home h1 {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'pacifico', serif;
+ }
+
+ /* Category Styles */
+
+#network_battery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3778c2;
+    color: #fff;
+    padding: 10px;
+}
+
+#network i {
+    font-size: 11px;
+}
+
+#battery i {
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    background-color: #3778c2;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover,
+header a:active {
+    color: red;
+}
+
+.logout {
+    background-color: red;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ #group_summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3778c2;
+    color: #fff;
+    padding: 15px 5px;
+ }
+
+ .group_image {
+    width: 70px;
+    height: 70px;
+ }
+
+ .group_image img {
+    width: 100%;
+    height: 100%;
+ }
+
+.single_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #777;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 15px 10px;
+    background-color: #fff;
+}
+
+.single_group > div {
+    display: flex;
+    gap: 20px;
+}
+
+.single_group a {
+    text-decoration: none;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#transaction_nav {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    background-color: #3778c2;
+    color: #fff;
+    padding: 10px;
+}
+
+#transaction_nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#transaction_nav a i {
+    font-size: 30px;
+}
+
+#group_head span {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#image_group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#image_group img {
+    width: 80px;
+    height: 80px;
+}
+
+.new {
+    display: block;
+    text-decoration: none;
+    padding: 20px 0;
+    border: 1px solid #666;
+    margin: auto;
+    text-align: center;
+    background-color: #5fb523;
+    width: 395px;
+    color: #fff;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.transaction h4 {
+    align-self: center;
+}
+
+.purpose {
+    margin-bottom: 15px;
+}
+
+.date_time {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#show_group {
+    position: relative;
+}
+
+#group_head {
+    background-color: #3778c2;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+#show_deals,
+#show_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+}
+
+form div input{
+    padding: 10px;
+}
+
+#create_deal form,
+#create_group form {
+    padding: 15px;
+}
+
+#create_deal form div,
+#create_group form div {
+    display: grid;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+#create_deal h2,
+#create_group h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Devise */
+.field {
+    padding: 0 10px;
+}
+
+.field,
+.actions {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#login_title,
+#register_title {
+    text-align: center;
+    margin: 10px;
+}
