@@ -1,7 +1,7 @@
 <section class="single_group">
     <div>
         <div class='group_image'>
-            <%= image_tag "#{group.icon}" %>
+            <img src="<%= group.icon %>" alt="">
         </div>
         <div class="bio">
             <h2> <%= link_to "#{group.name}", group_path(group.id) %> </h2>

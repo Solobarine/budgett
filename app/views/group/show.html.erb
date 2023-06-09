@@ -8,7 +8,7 @@
         </div>
         <div id="group_head">
             <div id="image_group">
-                <%= image_tag "#{@group.icon}" %>
+                <img src="<%= @group.icon %>" alt="">
                 <h3> <%= @group.name %> </h3>
             </div>
             <h3>$<%= @group.total_deals%> </h3>
