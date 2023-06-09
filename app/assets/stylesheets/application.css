@@ -198,15 +198,13 @@ header a:active {
 
 .new {
     display: block;
-    position: absolute;
     text-decoration: none;
     padding: 20px 0;
     border: 1px solid #666;
     margin: auto;
     text-align: center;
     background-color: #5fb523;
-    bottom: 0;
-    width: 400px;
+    width: 395px;
     color: #fff;
 }
 
